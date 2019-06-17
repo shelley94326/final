@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+*:before {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+*:after {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  border-top: 20px solid ed9c63;
+  border-bottom: 20px solid #f1f43d;
+  background: #ffd5b7;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #f1f43d 10%, #ed9c63 80%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #f1f43d 10%, #ed9c63 80%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #f1f43d 10%, #ed9c63 80%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6d365', endColorstr='#fda085',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  font-size: 14px;
+  font-family: 黑體-繁, "Heiti TC", "儷黑 Pro", "LiHei Pro", 微軟正黑體, "Microsoft JhengHei", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.namecard {
+  position: relative;
+  width: 350px;
+  padding: 20px;
+  margin: 150px auto 0;
+  border: 1px solid #efefef;
+  background-color: #efefef;
+  letter-spacing: 1px;
+  color: #555;
+  overflow: hidden;
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.namecard h2 {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.namecard h2 span {
+  font-size: 15px;
+}
+.namecard h5 {
+  margin: 15px 0;
+  text-align: center;
+  color: #db886f;
+}
+.namecard hr {
+  border: 0;
+  border-top: 1px dashed #f6d365;
+}
+.namecard p {
+  position: relative;
+  font-size: 12px;
+  line-height: 18px;
+  z-index: 1;
+}
+.namecard .circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 8%;
+  -webkit-border-radius: 8%;
+  border-radius: 8%;
+}
+.namecard .circle.circle2 {
+  width: 60px;
+  height: 60px;
+  right: -30px;
+  top: -30px;
+  border: 2px solid #f6d365;
+}
+.namecard .circle.circle1 {
+  width: 150px;
+  height: 150px;
+  right: -50px;
+  bottom: -40px;
+  background-color: #f6d365;
+  opacity: 0.6;
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.namecard .circle.circle3 {
+  right: 50px;
+  bottom: -70px;
+  background-color: #f6d365;
+  opacity: 0.3;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.namecard .circle.circle4 {
+  width: 30px;
+  height: 30px;
+  right: 5px;
+  bottom: 115px;
+  border: 2px solid #f6d365;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.namecard:hover {
+  border: 1px solid #fda085;
+  -moz-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+  margin-top: 140px;
+}
+.namecard:hover hr {
+  border-top: 1px dashed #fda085;
+}
+.namecard:hover .circle.circle1 {
+  background-color: #fda085;
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.namecard:hover .circle.circle3 {
+  background-color: #fda085;
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.namecard:hover .circle.circle4 {
+  border: 2px solid #fda085;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.page-title {
+  position: absolute;
+  bottom: -6px;
+  right: 5px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+}
+
+.mark {
+  position: absolute;
+  bottom: 100px;
+  font-size: 150px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.1005);
+}
